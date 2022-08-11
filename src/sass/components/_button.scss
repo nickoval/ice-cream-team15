@@ -11,7 +11,7 @@
   background-color: var(--white-color);
 
 
-  transition: transform 250ms, background-color 250ms, box-shadow 250ms;
+  transition: transform 250ms var(--time-function), color 250ms var(--time-function), background-color 250ms var(--time-function), box-shadow 250ms var(--time-function);
 
   &:hover,
   &:focus {
@@ -27,7 +27,7 @@
     &:hover,
     &:focus {
       color: var(--title-text-color);
-      background-color: var(--white-color);
+      // background-color: var(--white-color);
     }
   }
 }

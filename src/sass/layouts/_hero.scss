@@ -244,68 +244,68 @@
       }
     }
   
-    &__button {
-      position: relative;
-      border-radius: 50%;
-      width: 18px;
-      height: 18px;
-      @include for-desktop-up {
-        width: 26px;
-        height: 26px;
-      }
-      transition: transform 0.2s var(--time-function), background-color 0.2s var(--time-function), box-shadow 0.2s var(--time-function);
-    }
-    &__button:hover,
-    &__button:focus {
-      background-color: var(--title-text-color);
-      transform: scale(1.02);
-      box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
-      &::before, &::after, .description__icon {
-      background-color: var(--white-text-color);
-      }
-    }
+    // &__button {
+    //   position: relative;
+    //   border-radius: 50%;
+    //   width: 18px;
+    //   height: 18px;
+    //   @include for-desktop-up {
+    //     width: 26px;
+    //     height: 26px;
+    //   }
+    //   transition: transform 0.2s var(--time-function), background-color 0.2s var(--time-function), box-shadow 0.2s var(--time-function);
+    // }
+    // &__button:hover,
+    // &__button:focus {
+    //   background-color: var(--title-text-color);
+    //   transform: scale(1.02);
+    //   box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
+    //   &::before, &::after, .description__icon {
+    //   background-color: var(--white-text-color);
+    //   }
+    // }
 
-    &__button::before,
-    &__button::after,
-    &__icon {
-      display: block;
-      position: absolute;
-      height: 2px;
-      background-color: var(--title-text-color);
-      content: '';
-      // border-radius: 2px;
-    }
-    &__icon {
-      right: 5px;
-      width: 6px;
-      @include for-desktop-up {
-        right: 8px;
-        width: 8px;
-      }
-    }
+    // &__button::before,
+    // &__button::after,
+    // &__icon {
+    //   display: block;
+    //   position: absolute;
+    //   height: 2px;
+    //   background-color: var(--title-text-color);
+    //   content: '';
+    //   // border-radius: 2px;
+    // }
+    // &__icon {
+    //   right: 5px;
+    //   width: 6px;
+    //   @include for-desktop-up {
+    //     right: 8px;
+    //     width: 8px;
+    //   }
+    // }
 
-    &__button::before{
-      width: 3px;
-      right: 6px;
-      top: 6px;
-      @include for-desktop-up {
-        width: 5px;
-        right: 8px;
-        top: 10px;
-      }
-      transform: rotate(45deg);
-    }
-    &__button::after {
-      width: 3px;
-      right: 6px;
-      bottom: 6px;
-      @include for-desktop-up {
-        width: 5px;
-        right: 8px;
-        bottom: 10px;
-      }
-      transform: rotate(-45deg);
-    }
+    // &__button::before{
+    //   width: 3px;
+    //   right: 6px;
+    //   top: 6px;
+    //   @include for-desktop-up {
+    //     width: 5px;
+    //     right: 8px;
+    //     top: 10px;
+    //   }
+    //   transform: rotate(45deg);
+    // }
+    // &__button::after {
+    //   width: 3px;
+    //   right: 6px;
+    //   bottom: 6px;
+    //   @include for-desktop-up {
+    //     width: 5px;
+    //     right: 8px;
+    //     bottom: 10px;
+    //   }
+    //   transform: rotate(-45deg);
+    // }
 
   }
  

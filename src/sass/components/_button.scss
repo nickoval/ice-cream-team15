@@ -31,3 +31,36 @@
     }
   }
 }
+
+.circle-button {
+  @include flexXY;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  color: var(--title-text-color);
+  // transition: transform 0.2s var(--time-function), background-color 0.2s var(--time-function), box-shadow 0.2s var(--time-function);
+  transition:  background-color 0.2s var(--time-function), box-shadow 0.2s var(--time-function);
+
+  &:hover, &:focus {
+    background-color: var(--title-text-color);
+    color: var(--white-color);
+    // transform: scale(1.02);
+    box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
+  }
+
+  &__icon {
+    fill:currentColor;
+  }
+
+  &__hero {
+    width: 18px;
+    height: 18px;
+
+    @include for-desktop-up {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+}

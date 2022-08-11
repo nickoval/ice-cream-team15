@@ -1,0 +1,77 @@
+<header class="header">
+    <div class="header-container container">
+        <svg class="header-icon" aria-label="link phone" width="199" height="50">
+            <use href="./images/icons.svg#icon-hederLogo"></use>
+        </svg>
+        <nav class="site-nav">
+            <ul class="site-nav__list list">
+                <li class="site-nav__item">
+                    <a class="current site-nav__link link" href="#">Home</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link link" href="#">About us</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link link" href="#">How it’s made?</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link link" href="#">Our products</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    <button class="mobile-menu__button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-mobile-menu-open>
+        <svg aria-label="link mobile menu" width="20" height="12">  
+            <use class="mobile-menu__button--menu" href="./images/icons.svg#icon-burger-menu"></use>     
+        </svg>
+    </button>
+    <button class="header-button"
+        type="button">
+        Buy now
+        <svg class="header-button__icon" aria-label="link Buy now" width="4" height="8">  
+            <use href="./images/icons.svg#icon-corner-right"></use>     
+        </svg>
+    </button>
+   
+    <div class="mobile-menu is-hidden" id="menu-container" data-mobile-menu>
+        <button class="mobile-menu__button mobile-menu__button--close"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-mobile-menu-close>
+        <svg aria-label="link mobile menu" width="14" height="14">
+            <use class="mobile-menu__button--cross" href="./images/icons.svg#icon-close"></use>     
+        </svg>
+        </button>
+        <button class="mobile-menu__header-button header-button"
+        type="button">
+        Buy now
+        <svg class="header-button__icon" aria-label="link Buy now" width="4" height="8">  
+            <use href="./images/icons.svg#icon-corner-right"></use>     
+        </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link mobile-menu__current" href="#">Home</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="#">About us</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="#">How it’s made?</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="#">Our products</a>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link" href="#">Contact</a>
+                </li>
+            </ul>                 
+        </div>
+    </div>
+</header>

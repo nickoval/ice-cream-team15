@@ -1,48 +1,48 @@
-// .header {
-//     background-color: var(--hero-bg-color);
-//     position: relative;
+.header {
+    background-color: var(--hero-bg-color);
+    position: relative;
 
-// }
+}
 
-// .header-container {
-//     display: flex;
-//     align-items: center;
-//     padding-top: 8px;
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
     
-//     @media screen and (min-width: 768px) {
-//         padding-top: 32px;
-//         }
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        }
     
-//     @media screen and (min-width: 1200px) {
-//         padding-top: 37px;
-//         } 
+    @media screen and (min-width: 1200px) {
+        padding-top: 37px;
+        } 
         
-// }
+}
 
-// .header-button {
-//     display: none;
-//     width: 159px;
-//     height: 44px;
-//     background: var(--white-color);
-//     border-radius: 22px;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 1.31;
-//     margin-left: auto;
-//     border: none;
-//     color: var(--title-text-color);
+.header-button {
+    display: none;
+    width: 159px;
+    height: 44px;
+    background: var(--white-color);
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    margin-left: auto;
+    border: none;
+    color: var(--title-text-color);
 
-//     @media screen and (min-width: 768px) {
-//         display: inline-block;
-//         } 
-// }
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        } 
+}
 
-// .header-button:hover,
-// .header-button:focus {
-//     background-color: var(--button-hover-color);
-//     border: transparent;
-// }
+.header-button:hover,
+.header-button:focus {
+    background-color: var(--button-hover-color);
+    border: transparent;
+}
 
-// .header-button__icon {
-//     margin-left: 12px;
-// }
+.header-button__icon {
+    margin-left: 12px;
+}

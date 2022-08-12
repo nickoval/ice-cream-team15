@@ -8,7 +8,7 @@
     height: 502px;
     background-color: var(--mobile-menu-bg-color);
 
-    transform: translateX(100%);
+    transform: translateX(0);
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -27,7 +27,7 @@
     
 
     &.is-hidden {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
  
     &__link {

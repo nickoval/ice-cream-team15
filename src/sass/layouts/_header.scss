@@ -35,14 +35,15 @@
     @media screen and (min-width: 768px) {
         display: inline-block;
         } 
-}
 
-.header-button:hover,
-.header-button:focus {
+
+&:hover,
+&:focus {
     background-color: var(--button-hover-color);
     border: transparent;
 }
 
+}
 .header-button__icon {
     margin-left: 12px;
 }

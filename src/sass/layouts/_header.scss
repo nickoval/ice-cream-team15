@@ -29,20 +29,23 @@
     font-size: 16px;
     line-height: 1.31;
     margin-left: auto;
+    
     border: none;
     color: var(--title-text-color);
 
     @media screen and (min-width: 768px) {
         display: inline-block;
         } 
-}
 
-.header-button:hover,
-.header-button:focus {
-    background-color: var(--button-hover-color);
-    border: transparent;
-}
 
-.header-button__icon {
-    margin-left: 12px;
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-color);
+        border: transparent;
+    }
+
+
+    &__icon {
+        margin-left: 12px;
+    }
 }

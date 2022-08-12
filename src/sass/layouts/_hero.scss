@@ -48,10 +48,10 @@
   //     background-image: url(../images/tablet/hero-circle@2x.png);
   //     }
     
-                background-size: 143px 336px,
-                335px 333px;
-                background-position: top 80px right 303px,
-                top 43px right 185px;
+  background-size: 143px 336px, 335px 333px;
+  // background-position: top 80px right 303px,
+  //               top 43px right 185px;
+    background-position: top 80px right calc(50% - 33px), top 43px right calc(50% - 33px);
         
                 .webp & {
                   background-image: url(../images/tablet/hero-img@1x.webp), url(../images/tablet/hero-circle@1x.webp);
@@ -85,9 +85,8 @@
     // }
 
     background-size: 236px 557px, 534px 534px;
-    background-position: top 108px right 328px,
-    top 54px right 149px;
-
+    // background-position: top 108px right 328px, top 54px right 149px;
+    background-position: top 108px right calc(50% - 189px), top 54px right calc(50% - 189px);
     .webp & {
       background-image: url(../images/desktop/hero-img@1x.webp), url(../images/desktop/hero-circle@1x.webp);
 

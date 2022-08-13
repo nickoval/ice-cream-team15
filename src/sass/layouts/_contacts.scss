@@ -171,6 +171,11 @@
       }
 
       color: var(--gray-text-color);
+
+      &:hover,
+      &:focus {
+        color: var(--title-text-color);
+      }
     }
   }
 

@@ -10,8 +10,10 @@
   color: var(--title-text-color);
   background-color: var(--white-color);
 
-
-  transition: transform 250ms var(--time-function), color 250ms var(--time-function), background-color 250ms var(--time-function), box-shadow 250ms var(--time-function);
+  transition: transform 250ms var(--time-function),
+    color 250ms var(--time-function),
+    background-color 250ms var(--time-function),
+    box-shadow 250ms var(--time-function);
 
   &:hover,
   &:focus {
@@ -40,17 +42,19 @@
   background-color: var(--white-color);
   color: var(--title-text-color);
   // transition: transform 0.2s var(--time-function), background-color 0.2s var(--time-function), box-shadow 0.2s var(--time-function);
-  transition:  background-color 0.2s var(--time-function), box-shadow 0.2s var(--time-function);
+  transition: background-color 0.2s var(--time-function),
+    box-shadow 0.2s var(--time-function);
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: var(--title-text-color);
     color: var(--white-color);
     // transform: scale(1.02);
-    box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
+    // box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
   }
 
   &__icon {
-    fill:currentColor;
+    fill: currentColor;
   }
 
   &__hero {
@@ -62,5 +66,4 @@
       height: 26px;
     }
   }
-
 }

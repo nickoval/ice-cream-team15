@@ -15,7 +15,7 @@
         </li>
       </ul>
 
-      <ul class="sale-list rubberBand">
+      <ul class="sale-list goLeft">
         <li class="sale-list__item">
           <p class="title sale-list__title">16</p>
           <p class="sale-list__text">cafes</p>
@@ -34,16 +34,39 @@
         <!-- <button type="button" class="button description__button">
           <span class="description__icon"></span>
         </button> -->
-        <button type="button" class="circle-button circle-button__hero">
+        <button
+          type="button"
+          class="circle-button circle-button__hero"
+          aria-expanded="false"
+          aria-controls="more-description"
+          data-description-button
+        >
           <svg
             class="circle-button__icon"
             aria-label="more"
             width="9"
             height="9"
           >
-            <use href="./images/sprite.svg#icon-arrow-right-solid"></use>
+            <use
+              class="icon-description"
+              href="./images/sprite.svg#icon-arrow-right-solid"
+            ></use>
+            <use
+              class="icon-description-close"
+              href="./images/sprite.svg#icon-cross"
+            ></use>
           </svg>
         </button>
+        <div
+          class="more-description rubberBand"
+          id="more-description"
+          data-description
+        >
+          <p class="more-description__title title">Our main secret:</p>
+          <p class="more-description__text title">
+            Only the best ingredients create the best taste.
+          </p>
+        </div>
       </div>
       <!-- <picture>
         <source

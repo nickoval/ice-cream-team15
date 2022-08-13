@@ -244,6 +244,7 @@
 
 .description {
   display: none;
+  position: relative;
   
   @include for-tablet-up {
     display: block;
@@ -336,6 +337,60 @@
  
 }
 
+.more-description {
+  display: none;
+
+  position: absolute;
+  bottom: -36px;
+  left: 28px;
+  width: 160px;
+  padding: 6px;
+  border: 1px solid var(--white-text-color);
+  border-radius: 20px;
+  text-align: center;
+  // font-size: 10px;
+  // line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  &__title {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 2px;
+  }
+  &__text {
+    font-size: 8px;
+    line-height: 1.5;
+  }
+
+  @include for-desktop-up {
+    bottom: -42px;
+    left: 50px;
+    width: 192px;
+    padding: 8px 12px;
+    border-radius: 30px;
+
+    &__title {
+      font-size: 12px;
+      line-height: 1.5;
+      margin-bottom: 3px;
+    }
+  
+    &__text {
+      font-size: 10px;
+      line-height: 1.5;
+    }
+
+  }
+  
+  background-color: var(--main-bg-color);
+  color: var(--title-text-color);
+
+  &.is-open {
+    display: block;
+  }
+}
+
+
 .ice-cream {
   position: absolute;
   right: 12px;
@@ -349,7 +404,6 @@
     right: 312px;
   }
 }
-
 
 .bio-eco {
   position: absolute;
@@ -366,7 +420,7 @@
   bottom: 0px;
 }
 
-@include for-desktop-up {
+@include for-tablet-up {
   .zoomInDown {
     animation-name: zoomInDown;
     animation-duration: 1.2s;
@@ -420,8 +474,8 @@
   
     .rubberBand {
       animation-name: rubberBand;
-      animation-duration: 1s;
-      animation-delay: 1.5s;
+      animation-duration: 0.5s;
+      // animation-delay: 1.5s;
       animation-fill-mode: both;
     }
   
@@ -432,35 +486,54 @@
       }
   
       30% {
-        transform: scale3d(1.2, 0.8, 1);
+        transform: scale3d(1.2, 0.8, 1) ;
         opacity: 0.3;
       }
   
       40% {
-        transform: scale3d(0.8, 1.2, 1);
+        transform: scale3d(0.8, 1.2, 1) ;
         opacity: 0.4;
       }
   
       50% {
-        transform: scale3d(1.1, 0.9, 1);
+        transform: scale3d(1.1, 0.9, 1) ;
         opacity: 0.5;
       }
   
       65% {
-        transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1) ;
         opacity: 0.7;
       }
   
-      75% {
-        transform: scale3d(1.05, 0.95, 1);
+      80% {
+        transform: scale3d(1.05, 0.95, 1) ;
         opacity: 0.9;
       }
   
       100% {
-        transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1) ;
         opacity: 1;
       }
     }
 
 
-}
+    .goLeft {
+      animation-name: goLeft;
+      animation-duration: 0.8s;
+      animation-delay: 0.5s;
+      animation-fill-mode: both;
+    }
+  
+    @keyframes goLeft {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+  
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+  }

@@ -78,32 +78,47 @@
 }
 
 
-.ice-cream {
+.ice-cream-p {
     background-color: #FFB8CA;
 
     &::before {
         position: absolute;
         content: " ";
         display: block;
-        border: 2px solid;
         width: 280px;
         height: 280px;
         top: -29%;
         left: 0;
+        background-image: url(../images/mobile/products-ice-cream@1x.png);
+
+        @include for-pixel-ratio-2 {
+            background-image: url(../images/mobile/products-ice-cream@2x.png);
+        }
 
 
         @include for-tablet-up {
             width: 224px;
             height: 224px;
+            background-image: url(../images/tablet/products-ice-coffee@1x.png);
+
+            @include for-pixel-ratio-2 {
+                background-image: url(../images/tablet/products-ice-coffee@2x.png);
+            }
         }
 
         @include for-desktop-up {
             width: 368px;
             height: 394px;
             top: -49%;
+            background-image: url(../images/desktop/products-ice-cream@1x.png);
+
+            @include for-pixel-ratio-2 {
+                background-image: url(../images/desktop/products-ice-cream@2x.png);
+            }
+
+
         }
     }
-
 }
 
 .ice-coffee {
@@ -113,21 +128,35 @@
         position: absolute;
         content: " ";
         display: block;
-        border: 2px solid;
         width: 280px;
         height: 280px;
         top: -29%;
         left: 0;
+        background-image: url(../images/mobile/products-ice-coffee@1x.png);
+
+        @include for-pixel-ratio-2 {
+            background-image: url(../images/mobile/products-ice-coffee@2x.png);
+        }
 
         @include for-tablet-up {
             width: 224px;
             height: 224px;
+            background-image: url(../images/tablet/products-ice-cream@1x.png);
+
+            @include for-pixel-ratio-2 {
+                background-image: url(../images/tablet/products-ice-cream@2x.png);
+            }
         }
 
         @include for-desktop-up {
             width: 368px;
             height: 394px;
             top: -49%;
+            background-image: url(../images/desktop/products-ice-coffee@1x.png);
+
+            @include for-pixel-ratio-2 {
+                background-image: url(../images/desktop/products-ice-coffee@2x.png);
+            }
         }
     }
 }
@@ -139,21 +168,35 @@
         position: absolute;
         content: " ";
         display: block;
-        border: 2px solid;
         width: 280px;
         height: 280px;
         top: -29%;
         left: 0;
+        background-image: url(../images/mobile/products-ice-milkshakes@1x.png);
+
+        @include for-pixel-ratio-2 {
+            background-image: url(../images/mobile/products-ice-milkshakes@2x.png);
+        }
 
         @include for-tablet-up {
             width: 224px;
             height: 224px;
+            background-image: url(../images/tablet/products-ice-milkshakes@1x.png);
+
+            @include for-pixel-ratio-2 {
+                background-image: url(../images/tablet/products-ice-milkshakes@2x.png);
+            }
         }
 
         @include for-desktop-up {
             width: 368px;
             height: 394px;
             top: -49%;
+            background-image: url(../images/desktop/products-ice-milkshakes@1x.png);
+
+            @include for-pixel-ratio-2 {
+                background-image: url(../images/desktop/products-ice-milkshakes@2x.png);
+            }
         }
     }
 }
@@ -175,8 +218,8 @@
         display: flex;
         align-items: center;
         margin: 0 auto;
-        width: 6px;
-        height: 6px;
+        width: 22px;
+
 
     }
 
@@ -194,9 +237,10 @@
     letter-spacing: 0.04em;
     color: var(--white-text-color);
     width: 200px;
-    height: 124px;
     margin: 0 auto;
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .products__btn {
@@ -223,12 +267,11 @@
     }
 }
 
-.button-icon {
-    fill: brown;
-    border-radius: 50%;
-    text-align: center;
-    justify-content: center;
-    // justify-content: center;
 
+.circle-button__p {
+    fill: currentColor;
+}
 
+.products-btn {
+    margin: auto;
 }

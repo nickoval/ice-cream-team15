@@ -1,0 +1,87 @@
+<section class="section" id="products">
+  <div class="container">
+    <p class="products__name">100% natural</p>
+    <h1 class="products__title">products</h1>
+    <ul class="products__item">
+      <li class="products__list ice-cream-p">
+        <h2 class="products__pretitle">ice cream</h2>
+        <p class="products__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button
+          type="button"
+          onclick="swa()"
+          class="circle-button products-btn"
+        >
+          <svg
+            class="circle-button__p"
+            aria-label="more"
+            width="12"
+            height="12"
+          >
+            <use href="./images/sprite.svg#icon-arrow-right-solid"></use>
+          </svg>
+        </button>
+
+        <div id="overlay">
+          <div class="popup">
+            <button
+              class="close"
+              title="Закрыть окно"
+              onclick="swa2()"
+            ></button>
+            <h2 class="zag">ice cream</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+        </div>
+      </li>
+      <li class="products__list ice-coffee">
+        <h2 class="products__pretitle">ice coffee</h2>
+        <p class="products__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button type="button" class="circle-button products-btn">
+          <svg
+            class="circle-button__p"
+            aria-label="more"
+            width="12"
+            height="12"
+          >
+            <use href="./images/sprite.svg#icon-arrow-right-solid"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="products__list milkshakes">
+        <h2 class="products__pretitle">milkshakes</h2>
+        <p class="products__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button type="button" class="circle-button products-btn">
+          <svg
+            class="circle-button__p"
+            aria-label="more"
+            width="12"
+            height="12"
+          >
+            <use href="./images/sprite.svg#icon-arrow-right-solid"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+<script>
+  var b = document.getElementById('overlay');
+  function swa() {
+    b.style.visibility = 'visible';
+    b.style.opacity = '1';
+    b.style.transition = 'all 0.7s ease-out 0s';
+  }
+  function swa2() {
+    b.style.visibility = 'hidden';
+    b.style.opacity = '0';
+  }
+</script>

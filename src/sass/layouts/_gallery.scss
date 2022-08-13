@@ -1,0 +1,26 @@
+.gallery__container {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  min-width: 320px;
+}
+
+.gallery__box + .gallery__box {
+  margin-left: 2.53px;
+}
+.gallery__item {
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.gallery__item + .gallery__item {
+  margin-top: 1.53px;
+}
+.gallery__item--wormwood {
+  width: 50%;
+}
+.gallery__images {
+  object-fit: cover;
+}
+.gallery__box--top {
+  padding-top: 3%;
+}

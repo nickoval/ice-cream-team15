@@ -32,7 +32,7 @@
         </svg>
     </button>
     <button class="header-button"
-        type="button">
+        type="button" data-modal-open>
         Buy now
         <svg class="header-button__icon" aria-label="link Buy now" width="14" height="10">  
             <use href="/src/images/sprite.svg#icon_arroq-right2"></use>     
@@ -50,9 +50,9 @@
         </svg>
         </button>
         <button class="mobile-menu__header-button"
-        type="button">
+        type="button" data-modal-open>
         Buy now
-        <svg class="header-button__icon" aria-label="link Buy now" width="14" height="10">  
+        <svg class="header-button__icon" aria-label="link Buy now" width="14" height="10">
             <use href="/src/images/icon/sprite-1.svg#icon-corner-right"></use>     
         </svg>
         </button>
@@ -74,4 +74,33 @@
             </ul>                 
         </div>
     </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="button-close__modal" type="button" data-modal-close>
+                        <svg class="modal__button--cross" aria-label="link mobile menu" width="30" height="30">
+                            <use href="/src/images/sprite.svg#icon-close"></use>     
+                        </svg> 
+                    </button>
+                    <h3 class="modal__title">MAKE YOUR CHOISE, <span class="modal__title-baby">BABY</span></h3>
+                    <form name="request" autocomplete="on">
+                        <label class="form-request__label">
+                            ice cream
+                            <input class="form-request__input" type="number" name="ice cream" min="0" max="999" step="1" value="0" />
+                          </label>
+                          
+                          <label class="form-request__label">
+                            ice coffee
+                            <input class="form-request__input" type="number" name="ice coffee" min="0" max="999" step="1" value="0" />
+                          </label>
+
+                          <label class="form-request__label">
+                            milkshakes
+                            <input class="form-request__input" type="number" name="milkshakes" min="0" max="999" step="1" value="0" />
+                          </label>
+                        <button class="button form-request__button" type="submit">ADD TO CARD
+        
+                        </button>  
+                    </form>
+                </div>
+            </div>
 </header>

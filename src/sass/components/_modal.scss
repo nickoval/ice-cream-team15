@@ -29,25 +29,25 @@
     background-image:  url(../images/desktop/modal.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
-}
 
-.modal__title {
-    font-family: var(--title-font);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;  
-    color:var(--title-text-color);
-    margin-bottom: 60px;
-    text-align: center;
 
-    &-baby {
-        font-weight: 600;
-        font-size: 30px;
+    &__title {
+        font-family: var(--title-font);
+        font-weight: 400;
+        font-size: 20px;
         line-height: 1.15;
         letter-spacing: 0.04em;  
-        color: var(--title-text-color);  
+        color:var(--title-text-color);
+        margin-bottom: 60px;
+        text-align: center;
+
+        &-baby {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 1.15;
+            letter-spacing: 0.04em;  
+            color: var(--title-text-color);  
+        }
     }
 }
 

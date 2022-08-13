@@ -1,5 +1,5 @@
-<section class="section">
-  <div class="container">
+<section class="section contacts-section">
+  <div class="container contacts-section__container">
     <h2 class="visually-hidden">Where are we located?</h2>
     <ul class="branches-list">
       <li class="branches-list__item">
@@ -35,7 +35,10 @@
       </li>
       <li class="branches-list__item">
         <div class="branches-list__category category">
-          <span class="category__branch-type">Foodtruck</span>
+          <span
+            class="category__branch-type category__branch-type--background-color--inverse"
+            >Food truck</span
+          >
           <p class="category__city">Los Angeles</p>
           <p class="category__description">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -96,7 +99,26 @@
         </ul>
       </li>
     </ul>
-    <button type="button" class="button">Our Locations</button>
-    <button type="button" class="button">Franchise</button>
+    <div class="container-for-contacts-buttons">
+      <button
+        type="button"
+        class="contacts-section__button"
+        data-modal-for-contacts-open
+      >
+        Our Locations
+        <svg class="contacts-section__icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-chevron-right"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="contacts-section__button contacts-section__button--background-color--inverse"
+      >
+        Franchise
+        <svg class="contacts-section__icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-chevron-right"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>

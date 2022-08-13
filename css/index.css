@@ -683,6 +683,11 @@ img {
   border: transparent;
 }
 
+.modal__button--cross {
+  background-color: transparent;
+  fill: black;
+}
+
 .header {
   position: absolute;
   z-index: 5;

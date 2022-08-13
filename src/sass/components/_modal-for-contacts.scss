@@ -1,0 +1,90 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-for-contacts {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.modal-for-contacts {
+  width: calc(100vw - 10px);
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  //   padding: 5px;
+
+  background-color: var(--hero-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  //   border-radius: 24px;
+  opacity: 1;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  z-index: 999;
+
+  display: block;
+
+  color: var(--white-text-color);
+  cursor: pointer;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: var(--button-hover-color);
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    // .close-button:hover &,
+    // .close-button:focus & {
+    //   fill: var(--accent-color);
+    // }
+  }
+}

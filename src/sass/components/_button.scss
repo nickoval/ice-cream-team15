@@ -61,6 +61,20 @@
       width: 26px;
       height: 26px;
     }
+
+            .icon-description-close {
+              display: none;
+            }
+      
+            &.is-open .icon-description-close {
+              display: block;
+            }
+      
+            &.is-open .icon-description {
+              display: none;
+            }
+
+
   }
 
 }

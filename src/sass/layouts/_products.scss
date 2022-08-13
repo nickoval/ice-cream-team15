@@ -207,7 +207,7 @@
 .products__btn:focus {
   background-color: var(--title-text-color);
   transform: scale(1.02);
-  // box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
+  box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
 
   &::before,
   &::after,

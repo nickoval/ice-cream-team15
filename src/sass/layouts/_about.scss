@@ -1,39 +1,89 @@
 .about {
     background-color: var(--main-bg-color);
+    
+
+    @media screen and (min-width: 1200px) {
+        z-index: 5;
+        background-image: url('/src/images/desktop/about-milk@1x.png');
+        background-repeat: no-repeat;
+        background-size: 1200px;
+        background-position: center 42%;
+        min-width: 280px;
+    
+        @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+            background-image: url('/src/images/desktop/about-milk@2x.png');
+        }
+    }
 }
 
 .about__label {
+    text-align: center;
+    
+    font-style: normal;
+    font-weight: 400;
 
-    @media screen and (max-width: 767px) {
+    color: var(--pretitle-text-color);
+
+    @media screen and (max-width: 767px) { 
         margin-bottom: 15px;
-        text-align: center;
 
-        font-style: normal;
-        font-weight: 400;
         font-size: 18px;
-        line-height: 21px;
-
-
-        color: var(--pretitle-text-color);
+        line-height: 1.17;  
     }
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 1.13;
+    }
 }
 
 .about__title {
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+
+    color: var(--title-text-color);
 
     @media screen and (max-width: 767px) {
         margin-bottom: 32px;
-        text-align: center;
-
-        font-style: normal;
-        font-weight: 400;
+        
         font-size: 34px;
-        line-height: 39px;
-        letter-spacing: 0.04em;
-
-        color: var(--title-text-color);
+        line-height: 1.15; 
     }
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+
+        font-size: 48px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 60px;
+
+        font-size: 58px;
+        line-height: 66px;
+        line-height: 1.14;
+    }
+}
+
+.about__item {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-bottom: 60px;
+    }
 }
 
 img {
@@ -43,88 +93,162 @@ img {
         margin-bottom: 40px;
     }
 
+    @media screen and (min-width: 768px) {
+        width: 335px;
+        margin-right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 500px;
+        z-index: 10;
+        margin-right: 100px;
+    }
 }
 
 .about__text-part-first {
+    margin-bottom: 30px;
+
+    font-style: normal;
+    font-weight: 500;
+
+    color: var(--black-text-color);
 
     @media screen and (max-width: 767px) {
         width: 220px;
-        margin-bottom: 30px;
-
-        font-style: normal;
-        font-weight: 500;
+       
         font-size: 12px;
         line-height: 1.62;
+    }
 
-        color: var(--black-text-color);
+    @media screen and (min-width: 768px) {
+        width: 335px;
+ 
+        font-size: 14px;
+        line-height: 1.76;  
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 463px;
+
+        font-size: 16px;
+        line-height: 1.76;
     }
 
 }
 
 .about__text-part-second {
+    margin-bottom: 40px;
+    font-size: 14px;
+
+    font-style: normal;
+    font-weight: 500;
+    color: var(--gray-text-color);
 
     @media screen and (max-width: 767px) {
         width: 220px;
         margin-bottom: 20px;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 1.62;
 
-        color: var(--gray-text-color);
+        font-size: 12px;
+        line-height: 1.62;  
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 335px;
+         
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 463px;
+
+        line-height: 1.94;
+        letter-spacing: 0.04em;
     }
 
 }
 
 .about__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 176px;
+    height: 44px;
+    
+    background: var(--white-text-color);
+    color: var(--title-text-color);
+    border-radius: 22px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 16px;
 
-    @media screen and (max-width: 767px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    @media screen and (max-width: 767px) {  
         margin-bottom: 40px;
-
-        width: 176px;
-        height: 44px;
-
-        background: var(--white-text-color);
-        border-radius: 22px;
-
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.3;
-
-        color: #D41443;
+        font-size: 14px;    
     }
 
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;  
+    }
+
+    &:hover ,
+    &:focus {
+        background: var(--location-button-color);
+        color: var(--white-text-color);
+    }
 }
 
 .about__arrow {
-
-    @media screen and (max-width: 767px) {
-        margin-left: 15px;
-    }
+    margin-left: 12px;  
 }
 
+.about__button:hover .about__arrow {
+    fill: var(--white-text-color);
+}
+
+.advantages {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+}
 .advantages__title {
     display: none;
 }
 
 .advantages__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
     @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-
         margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 22px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 100px;
     }
 
 }
 
 .advantages__item:last-child {
-    margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 0;
+    }
+    
 }
 
 .about__text {
@@ -132,14 +256,19 @@ img {
         background-image: url('/src/images/mobile/about-milk@1x.png');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center 45%;
+        background-position: center 33%;
+        min-width: 280px;
 
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
             background-image: url('/src/images/mobile/about-milk@2x.png');
         }
     }
+    
+    @media screen and (min-width: 1200px) {
+       margin-top: 90px;
+    }
+    
 }
 
 .advantages__item-milk::before {
@@ -148,23 +277,22 @@ img {
     display: inline-block;
     width: 33px;
     height: 50px;
-
-
     margin-bottom: 16px;
 
-    @media screen and (max-width: 767px) {
-        background-image: url('/src/images/mobile/about_milk@1x.png');
+    background-image: url('/src/images/mobile/about_milk@1x.png');
 
+    
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+        background-image: url('/src/images/mobile/about_milk@2x.png');
+        background-size: contain;  
+    }
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+    }
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 2dppx) {
-            background-image: url('/src/images/mobile/about_milk@2x.png');
-            background-size: 50px 50px;
-            background-repeat: no-repeat;
-            background-position: center;
-
-        }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
     }
 }
 
@@ -175,17 +303,21 @@ img {
     height: 50px;
 
     margin-bottom: 16px;
-
-    @media screen and (max-width: 767px) {
-        background-image: url('/src/images/mobile/about_apple@1x.png');
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 2dppx) {
-            background-image: url('/src/images/mobile/about_apple@2x.png');
-            background-size: contain;
-        }
+    
+    background-image: url('/src/images/mobile/about_apple@1x.png');
+    
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+        background-image: url('/src/images/mobile/about_apple@2x.png');
+        background-size: contain;
     }
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
 }
 
 .advantages__item-heart::before {
@@ -193,40 +325,68 @@ img {
     display: inline-block;
     margin-bottom: 16px;
 
-    @media screen and (max-width: 767px) {
-        background-image: url('/src/images/mobile/about_heart@1x.png');
+    background-image: url('/src/images/mobile/about_heart@1x.png');
         width: 46px;
         height: 50px;
+    
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+        background-image: url('/src/images/mobile/about_heart@2x.png');
+        background-size: contain;
+        width: 44px;
+    }
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 2dppx) {
-            background-image: url('/src/images/mobile/about_heart@2x.png');
-            background-size: contain;
-            width: 44px;
-        }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+.advantages__date {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.14;
+
+    color: var(--title-text-color);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 5px;
+        font-size: 36px;  
+    }
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 13px;
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+        font-size: 58px;
     }
 
 }
 
-.advantages__date {
-    margin-bottom: 5px;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-
-    color: var(--title-text-color);
-}
-
 .advantages__part {
-    width: 230px;
-
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-
+    line-height: 1.74;
     color: var(--black-text-color);
+    
+
+    @media screen and (max-width: 767px) {
+        width: 230px;
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 160px;
+        font-size: 14px;  
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 290px;
+    }
 }

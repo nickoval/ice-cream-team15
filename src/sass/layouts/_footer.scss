@@ -1,5 +1,11 @@
-
 .footer {
+  @media (min-width: 768px) and (max-width: 1200px) {
+    padding-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 61px;
+  }
+
   br {
     @media screen and (min-width: 1200px) {
       display: none;
@@ -15,14 +21,24 @@
       height: 34px;
     }
   }
-  
 
   background-color: var(--main-bg-color);
   border-bottom: 1px solid var(--gray-text-color);
 }
 .footer-blocks {
   display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
+.container__tablet {
+  display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 .footer-block-1 {
   @media screen and (min-width: 768px) {
@@ -39,9 +55,14 @@
     font-size: 18px;
     line-height: 1.16;
   }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
     letter-spacing: 0.04em;
   }
 
@@ -63,6 +84,11 @@
     line-height: 1.14;
     letter-spacing: 0.06em;
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
   text-transform: uppercase;
   margin-bottom: 40px;
 }
@@ -80,14 +106,17 @@
   align-items: center;
 }
 .footer-block-2__icons {
-  @media screen and (max-width: 767px) {
-    width: 32px;
-    height: 32px;
+  fill: var(--soc-list-color);
+  transition: transform 0.2s var(--time-function),
+    background-color 0.2s var(--time-function);
+  :hover,
+  :focus {
+    fill: var(--location-button-color);
+
+    transform: scale(1.02);
   }
-  @media screen and (max-width: 1199px) {
-  }
-  fill: var(--white-color);
 }
+
 .footer-block-2__item {
   margin-right: 28.24px;
   :last-child {
@@ -111,32 +140,61 @@
 .footer__block-3__item {
   margin-top: 40px;
   margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 59px;
+  }
 }
 .footer__telefon {
   color: var(--black-text-color);
   font-family: 'DM Sans';
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.83;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.83;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.02em;
+  }
   &__color {
     color: var(--title-text-color);
   }
 }
 
-// За футером. Надо решить текст
 .after__color {
   background-color: var(--main-bg-color);
 }
 .after__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+
   color: var(--gray-text-color);
   text-align: center;
   @media screen and (max-width: 767px) {
     padding-top: 16px;
+    line-height: 1.5;
   }
   @media screen and (max-width: 1199px) {
     padding-top: 8px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
   }
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
     padding-top: 7px;
+  }
+}
+.after__br {
+  @media screen and(min-width:768px) {
+    display: none;
   }
 }

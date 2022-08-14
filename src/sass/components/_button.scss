@@ -50,7 +50,7 @@
     background-color: var(--title-text-color);
     color: var(--white-color);
     // transform: scale(1.02);
-    box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
+    // box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
   }
 
   &__icon {
@@ -66,18 +66,16 @@
       height: 26px;
     }
 
-            .icon-description-close {
-              display: none;
-            }
-      
-            &.is-open .icon-description-close {
-              display: block;
-            }
-      
-            &.is-open .icon-description {
-              display: none;
-            }
+    .icon-description-close {
+      display: none;
+    }
 
+    &.is-open .icon-description-close {
+      display: block;
+    }
 
+    &.is-open .icon-description {
+      display: none;
+    }
   }
 }

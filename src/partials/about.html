@@ -1,45 +1,62 @@
-<section class="about">
+<section class="section about">
 
     <div class="container">
-        <p class="about__label">tradition and love</p>
-        <h2 class="about__title">how it’s made?</h2>
+        <p class="title about__label">tradition and love</p>
+        <h2 class="title about__title">how it’s made?</h2>
 
         <picture>
-            <source media="(max-width: 767px)"  srcset="./images/mobile/about-cow@1x.webp 1x , ./images/mobile/about-cow@2x.webp 2x" type="image/webp">
-            <source media="(max-width: 767px)"  srcset="./images/mobile/about-cow@1x.png 1x , ./images/mobile/about-cow@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="./images/tablet/about-cow@1x.webp 1x , ./images/tablet/about-cow@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 786px)" srcset="./images/tablet/about-cow@1x.png 1x , ./images/tablet/about-cow@2x.png 2x">
-            <source media="(min-width: 1200px)" srcset="./images/desktop/about-cow@1x.webp 1x , ./images/desktop/about-cow@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1200px)" srcset="./images/desktop/about-cow@1x.png 1x , ./images/desktop/about-cow@2x.png 2x">
-            
-          <img src="./images/tablet/about-cow@1x.png" alt="Cow">
+            <source media="(max-width: 767px)"
+                srcset="./images/mobile/about-cow@1x.webp 1x , ./images/mobile/about-cow@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)"
+                srcset="./images/mobile/about-cow@1x.png 1x , ./images/mobile/about-cow@2x.png 2x">
+            <source media="(min-width: 768px)"
+                srcset="./images/tablet/about-cow@1x.webp 1x , ./images/tablet/about-cow@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 786px)"
+                srcset="./images/tablet/about-cow@1x.png 1x , ./images/tablet/about-cow@2x.png 2x">
+            <source media="(min-width: 1200px)"
+                srcset="./images/desktop/about-cow@1x.webp 1x , ./images/desktop/about-cow@2x.webp 2x"
+                type="image/webp">
+            <source media="(min-width: 1200px)"
+                srcset="./images/desktop/about-cow@1x.png 1x , ./images/desktop/about-cow@2x.png 2x">
+
+            <img src="./images/tablet/about-cow@1x.png" alt="Cow">
 
         </picture>
 
-        <p class="about__text-part-first">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
-            faucibus lorem eget, egestas eros.
-            Maecenas eleifend erat at justo fringilla.</p>
-        <p class="about__text-part-second">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
-            rhoncus orci in imperdiet placerat.
-            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-            <br>Aliquam erat volutpat. Aenean accumsan.</br>
-        </p>
+        <div class="about__text">
+            <p class="about__text-part-first">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                cursus,
+                faucibus lorem eget, egestas eros.
+                Maecenas eleifend erat at justo fringilla.</p>
+            <p class="about__text-part-second">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                Mauris
+                rhoncus orci in imperdiet placerat.
+                Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                tincidunt.<br />
+                <br>Aliquam erat volutpat. Aenean accumsan.</br>
+            </p>
+        </div>
 
-        <button type="button" class="about__button"> Read more </button>
+        <button type="button" class="about__button">
+            Read more
+            <svg class="about__arrow" width="10" height="14">
+                <use href="./images/sprite.svg#icon_arroq-right2"></use>
+            </svg>
+        </button>
 
         <h2 class="advantages__title">Advantages</h2>
 
         <ul class="advantages">
-            <li class="advantages__item">
-                <span class="advantages__date">721</span>
-                <p  class="advantages__part">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-            </li>
-            <li class="advantages__item">
-                <span class="advantages__date">16kg</span>
+            <li class="advantages__item advantages__item-milk ">
+                <span class="title advantages__date">721</span>
                 <p class="advantages__part">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
-            <li class="advantages__item">
-                <span class="advantages__date">84</span>
+            <li class="advantages__item advantages__item-apple">
+                <span class="title advantages__date">16kg</span>
+                <p class="advantages__part">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class="advantages__item advantages__item-heart">
+                <span class="title advantages__date">84</span>
                 <p class="advantages__part">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
         </ul>

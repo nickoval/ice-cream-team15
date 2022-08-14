@@ -49,7 +49,7 @@
   &:focus {
     background-color: var(--title-text-color);
     color: var(--white-color);
-    // transform: scale(1.02);
+    transform: scale(1.02);
     box-shadow: 2px 2px 4px rgb(10 10 10 / 10%);
   }
 

@@ -433,10 +433,6 @@ img {
 
 .button:hover, .button:focus {
   background-color: var(--button-hover-color);
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-  -webkit-box-shadow: 2px 2px 4px rgba(10, 10, 10, 0.1);
-          box-shadow: 2px 2px 4px rgba(10, 10, 10, 0.1);
 }
 
 .button--hero-red {
@@ -1613,9 +1609,51 @@ img {
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
+@media screen and (min-width: 1200px) {
+  br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  svg {
+    width: 34px;
+    height: 34px;
+  }
+}
+
 .footer {
   background-color: var(--main-bg-color);
   border-bottom: 1px solid var(--gray-text-color);
+}
+
+.footer-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-block-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer-block-1__pre-title {
@@ -1623,10 +1661,23 @@ img {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   text-transform: uppercase;
   padding-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-block-1__pre-title {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-block-1__pre-title {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
 }
 
 .footer-block-1__title {
@@ -1634,60 +1685,108 @@ img {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
-  font-size: 34px;
-  line-height: 39px;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-block-1__title {
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-block-1__title {
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}
+
+.footer-block-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-block-2 {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 .footer-block-2__link-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
-.footer-block-2__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: var(--pretitle-text-color);
+.footer-block-2__link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer-block-2__icons {
   fill: var(--white-color);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-block-2__icons {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.footer-block-2__item {
   margin-right: 28.24px;
 }
 
 .footer-block-2__item :last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 @media (min-width: 1200px) {
   .footer-block-2__item {
     margin-right: 30px;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .footer__block-3__item {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  .footer-block-2__item :nth-child(3) {
+    margin-right: 0;
   }
 }
 
+.footer-block-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-block-3 {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.footer__block-3__item {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .footer__telefon {
-  text-align: end;
   color: var(--black-text-color);
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.83;
 }
 
 .footer__telefon__color {

@@ -10,28 +10,45 @@
   background-color: var(--hero-bg-color);
   background-repeat: no-repeat;
 
-  // background-size: 284px 344px;
-  // background-position: top 83px right 0;
-  // background-image: url(../images/mobile/hero-circle@1x.png);
-  // @include for-pixel-ratio-2 {
-  //   background-image: url(../images/mobile/hero-circle@2x.png);
-  // }
+  background-size: 284px 344px;
+  background-position: top 83px right 0;
+  background-image: url(../images/mobile/hero-circle@1x.png);
+  @include for-pixel-ratio-2 {
+    background-image: url(../images/mobile/hero-circle@2x.png);
+  }
 
-  background-size: 171px 410px, 284px 344px;
-  background-position: top 92px right 32px, top 83px right 0;
+  // Изменил привязку круга и мороженки, круг взял полный из "таблетки"
+  background-size: 171px 410px, 344px 344px;
+  background-position: top 92px left calc(50% + 43px), top 83px left calc(50% + 48px);
   .webp & {
-    background-image: url(../images/mobile/hero-img@1x.webp), url(../images/mobile/hero-circle@1x.webp);
+    background-image: url(../images/mobile/hero-img@1x.webp), url(../images/tablet/hero-circle@1x.webp);
         
     @include for-pixel-ratio-2 {
-      background-image: url(../images/mobile/hero-img@2x.webp), url(../images/mobile/hero-circle@2x.webp);
+      background-image: url(../images/mobile/hero-img@2x.webp), url(../images/tablet/hero-circle@2x.webp);
           }
   }
   .no-webp &{
-    background-image: url(../images/mobile/hero-img@1x.png), url(../images/mobile/hero-circle@1x.png);
+    background-image: url(../images/mobile/hero-img@1x.png), url(../images/tablet/hero-circle@1x.png);
     @include for-pixel-ratio-2 {
-    background-image: url(../images/mobile/hero-img@2x.png), url(../images/mobile/hero-circle@2x.png);
+    background-image: url(../images/mobile/hero-img@2x.png), url(../images/tablet/hero-circle@2x.png);
       }
   }
+  
+  // background-size: 171px 410px, 284px 344px;
+  // background-position: top 92px right 32px, top 83px right 0;
+  // .webp & {
+  //   background-image: url(../images/mobile/hero-img@1x.webp), url(../images/mobile/hero-circle@1x.webp);
+        
+  //   @include for-pixel-ratio-2 {
+  //     background-image: url(../images/mobile/hero-img@2x.webp), url(../images/mobile/hero-circle@2x.webp);
+  //         }
+  // }
+  // .no-webp &{
+  //   background-image: url(../images/mobile/hero-img@1x.png), url(../images/mobile/hero-circle@1x.png);
+  //   @include for-pixel-ratio-2 {
+  //   background-image: url(../images/mobile/hero-img@2x.png), url(../images/mobile/hero-circle@2x.png);
+  //     }
+  // }
 
 
   @include for-tablet-up {

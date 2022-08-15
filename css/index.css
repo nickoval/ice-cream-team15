@@ -2656,7 +2656,7 @@ img {
 
 .footer {
   background-color: var(--main-bg-color);
-  border-bottom: 1px solid var(--gray-text-color);
+  border-bottom: 1px solid #e1e1e1;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -2834,21 +2834,21 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--time-function);
+          transition-timing-function: var(--time-function);
 }
 
 .footer-block-2__icons {
   fill: var(--soc-list-color);
-  -webkit-transition: background-color 0.2s var(--time-function), -webkit-transform 0.2s var(--time-function);
-  transition: background-color 0.2s var(--time-function), -webkit-transform 0.2s var(--time-function);
-  transition: transform 0.2s var(--time-function), background-color 0.2s var(--time-function);
-  transition: transform 0.2s var(--time-function), background-color 0.2s var(--time-function), -webkit-transform 0.2s var(--time-function);
 }
 
 .footer-block-2__icons :hover,
 .footer-block-2__icons :focus {
   fill: var(--location-button-color);
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 .footer-block-2__item {

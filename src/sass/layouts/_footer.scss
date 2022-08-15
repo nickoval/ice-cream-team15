@@ -23,7 +23,7 @@
   }
 
   background-color: var(--main-bg-color);
-  border-bottom: 1px solid var(--gray-text-color);
+  border-bottom: 1px solid #e1e1e1;
 }
 .footer-blocks {
   display: flex;
@@ -104,16 +104,17 @@
 .footer-block-2__link {
   justify-content: center;
   align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 }
+
 .footer-block-2__icons {
   fill: var(--soc-list-color);
-  transition: transform 0.2s var(--time-function),
-    background-color 0.2s var(--time-function);
+
   :hover,
   :focus {
     fill: var(--location-button-color);
-
-    transform: scale(1.02);
   }
 }
 

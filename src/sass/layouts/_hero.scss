@@ -17,6 +17,7 @@
     background-image: url(../images/mobile/hero-circle@2x.png);
   }
 
+  // Изменил привязку круга и мороженки, круг взял полный из "таблетки"
   background-size: 171px 410px, 344px 344px;
   background-position: top 92px left calc(50% + 43px), top 83px left calc(50% + 48px);
   .webp & {

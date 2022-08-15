@@ -35,6 +35,10 @@
     border: none;
     color: var(--title-text-color);
 
+    transition: transform 250ms var(--time-function),
+    color 250ms var(--time-function),
+    background-color 250ms var(--time-function);
+
     @media screen and (min-width: 768px) {
         display: inline-block;
         } 
@@ -44,6 +48,7 @@
     &:focus {
         background-color: var(--button-hover-color);
         border: transparent;
+        transform: scale(1.01);
     }
 
     &__icon {

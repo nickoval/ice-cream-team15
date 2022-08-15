@@ -3,15 +3,25 @@
     
 
     @media screen and (min-width: 1200px) {
+        padding-bottom: 80px;
         z-index: 5;
-        background-image: url('/src/images/desktop/about-milk@1x.png');
         background-repeat: no-repeat;
         background-size: 1200px;
         background-position: center 42%;
         min-width: 280px;
-    
-        @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-            background-image: url('/src/images/desktop/about-milk@2x.png');
+        
+        .webp & {
+            background-image: url('/src/images/desktop/about-milk@1x.webp');
+                        
+            @include for-pixel-ratio-2 {
+            background-image: url('/src/images/desktop/about-milk@2x.webp');
+                            }
+        }
+        .no-webp & {
+            background-image: url('/src/images/desktop/about-milk@1x.png');
+            @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+                background-image: url('/src/images/desktop/about-milk@2x.png');
+            }
         }
     }
 
@@ -219,9 +229,9 @@
         justify-content: flex-start;
     }
 }
-.advantages__title {
-    display: none;
-}
+// .advantages__title {
+//     display: none;
+// }
 
 .advantages__item {
     display: flex;
@@ -255,15 +265,25 @@
 
 .about__text {
     @media screen and (max-width: 767px) {
-        background-image: url('/src/images/mobile/about-milk@1x.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center 33%;
         min-width: 280px;
 
-
-        @media (min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
-            background-image: url('/src/images/mobile/about-milk@2x.png');
+        .webp & {
+                background-image: url('/src/images/mobile/about-milk@1x.webp');
+        
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 2dppx) {
+                    background-image: url('/src/images/mobile/about-milk@2x.webp');
+                }
+            }
+        
+        .no-webp & { 
+            background-image: url('/src/images/mobile/about-milk@1x.png');
+            @media (min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
+                background-image: url('/src/images/mobile/about-milk@2x.png');
+            }
         }
     }
     

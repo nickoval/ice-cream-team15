@@ -12,6 +12,12 @@
 
 		&__image {
 			margin-bottom: 32px;
+			@media (min-width: 768px) {
+				margin-bottom: 20px;
+			}
+			@media (min-width: 1200px) {
+				margin-bottom: 16px;
+			}
 			img{
 				margin: 0 auto;
 			}
@@ -27,7 +33,16 @@
 			margin-bottom: 16px;
 			padding-top: 43px;
 			background-color: var(--customer-bg-color);
-		}
+			@media (min-width: 768px) {
+				width: 620px;
+				margin-bottom: 4px;
+			}
+			@media (min-width: 1200px) {
+				width: 968px;
+				margin-bottom: 16px;
+			}	
+			}
+		
 
 		// .slider__text
 
@@ -49,14 +64,36 @@
 				to bottom,
 				transparent,
 				transparent 29px,
-				var(--customer-border-color) 30px,
-				var(--customer-border-color) 31px
+				var(--customer-border-color) 29px,
+				var(--customer-border-color) 30px
 			);
+			@media (min-width: 768px) {
+				width: 608px;
+				padding-left: 51px;
+				padding-right: 55px;
+				font-size: 14px;
+				line-height: 2.16;
+			}
+			@media (min-width: 1200px) {
+				width: 822px;
+				padding-left: 72px;
+				padding-right: 74px;
+				font-size: 16px;
+				line-height: 1.86;
+			}
 		}
 
 			// .slider__footer
 
-	&__footer {
+			&__footer {
+		margin-bottom: 16px;
+		@media (min-width: 768px) {
+			margin-bottom: 32px;
+			font-size: 16px;
+		}
+		@media (min-width: 1200px) {
+			font-size: 20px;
+		}
 	}
 
 		// .slider__decor
@@ -95,11 +132,16 @@
 		// .slider__author
 
 		&__author {
-			margin-bottom: 16px;
 			font-weight: 500;
 			font-size: 14px;
 			text-align: center;
 			line-height: 1.86;
+			@media (min-width: 768px) {
+				font-size: 16px;
+			}
+			@media (min-width: 1200px) {
+				font-size: 20px;
+			}
 		}
 }
 .icon {
@@ -110,6 +152,14 @@
 			position: absolute;
 			top: 30px;
 			left: 53px;
+			@media (min-width: 768px) {
+				top: 20px;
+				left: 6px;
+			}
+			@media (min-width: 1200px) {
+				top: 32px;
+				left: 72px;
+			}
 		}
 }
 
@@ -150,6 +200,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 .slick-dots li{
 	cursor: pointer;
@@ -169,13 +220,18 @@
 	background-color: #d9d9d9;
 	border-radius: 50%;
 	cursor: pointer;
+	background-repeat: no-repeat;
+	&:hover, &:focus {
+		outline: none;
 	}
+}
 
-	#slick-slide-control00{
-		background-color: transparent;
-		background-image: url("../images/icon/start/home.svg");
-	}
-	
-	#slick-slide-control00[aria-selected="true"]{
+.slick-dots li button[id="slick-slide-control00"]{
+	background-color: transparent;
+	background-image: url("../images/icon/start/home.svg");
+}
+
+
+#slick-slide-control00[aria-selected="true"]{
 		background-image: url("../images/icon/start/home_1.svg");
 	}

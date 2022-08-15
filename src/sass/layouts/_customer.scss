@@ -150,6 +150,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 .slick-dots li{
 	cursor: pointer;
@@ -169,6 +170,10 @@
 	background-color: #d9d9d9;
 	border-radius: 50%;
 	cursor: pointer;
+	background-repeat: no-repeat;
+	&:hover, &:focus {
+		outline: none;
+	}
 	}
 
 	#slick-slide-control00{

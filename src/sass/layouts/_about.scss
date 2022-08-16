@@ -25,7 +25,7 @@
         }
     }
 
-    img {
+    .about__cow {
         @media screen and (max-width: 767px) {
             margin-left: auto;
             margin-right: auto;
@@ -413,3 +413,90 @@
         width: 290px;
     }
 }
+.backdrop-about.backdrop-about__is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    transition: visibility var(--transition-duration) var(--time-function);
+
+}
+.backdrop-about {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 184, 202, 0.7);
+
+    visibility: visible;
+    transition: visibility var(--transition-duration) var(--time-function);
+
+}
+
+
+.backdrop-about.backdrop-about__is-hidden .modal-about-basic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+
+}
+
+.modal-about-basic {
+
+    width: 700px;
+    height: 550px;
+    border-radius: 3%;
+    
+    background-color: rgba(255, 165, 186, 1);
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    opacity: 1;
+    transition: opacity var(--transition-duration) var(--time-function), transform var(--transition-duration) var(--time-function);
+}
+
+
+
+
+
+.modal-container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 5%; 
+    top:0; 
+}
+.about__title-modal {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.modal-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__text {
+    text-align: center;
+    margin-bottom: 40px;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    color: #000000;
+
+}
+

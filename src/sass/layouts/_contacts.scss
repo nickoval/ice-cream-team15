@@ -214,10 +214,10 @@
     }
 
     @media (max-width: 767px) {
-      min-width: 161px;
+      width: 161px;
 
-      padding-right: 9px;
-      padding-left: 17px;
+      padding-right: 7px;
+      padding-left: 15px;
 
       &:not(:last-child) {
         margin-bottom: 10px;
@@ -225,7 +225,7 @@
     }
 
     @media (min-width: 768px) {
-      min-width: 191px;
+      width: 191px;
 
       padding-right: 9px;
       padding-left: 17px;
@@ -237,7 +237,7 @@
     }
 
     @media (min-width: 1200px) {
-      min-width: 198px;
+      width: 198px;
 
       padding-right: 9px;
       padding-left: 17px;

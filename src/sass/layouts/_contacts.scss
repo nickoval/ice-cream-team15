@@ -1,16 +1,20 @@
 .contacts-section {
   @media (max-width: 767px) {
     background-image: linear-gradient(to bottom, #fff 23%, #fff5f6 23%);
-    padding-top: 40px;
+    padding-top: 0px;
     padding-bottom: 40px;
   }
 
   @media (min-width: 768px) {
     background-image: linear-gradient(to bottom, #fff 47%, #fff5f6 47%);
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: 1200px) {
     background-image: linear-gradient(to bottom, #fff 19.5%, #fff5f6 19.5%);
+    padding-top: 60px;
+    padding-bottom: 120px;
   }
 
   &__container {

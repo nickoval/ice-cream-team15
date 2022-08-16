@@ -41,8 +41,9 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  min-width: 320px;
-  transition: all 0.8s ease 0s;
+  min-height: 137px;
+
+  transition: all 0.5s ease 0s;
 
   @media screen and (min-width: 768px) {
     gap: 6px;
@@ -53,7 +54,9 @@
 }
 
 .gallery__item {
+  position: relative;
   border-radius: 8px;
+  z-index: 0;
 
   // transition: all 0.3s ease;
 
@@ -61,7 +64,8 @@
     border-radius: 20px;
   }
   &:hover {
-    transform: scale(1.25, 1.25);
+    transform: scale(1.25);
+    z-index: 10;
   }
 }
 

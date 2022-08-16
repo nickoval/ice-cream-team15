@@ -203,7 +203,7 @@
         font-size: 14px;    
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 60px;  
     }
 
@@ -243,7 +243,8 @@
     }
 
     @media screen and (min-width: 768px) {
-        margin-right: 22px;
+        // margin-right: 22px; Увеличил по просьбе Андрея Данилко
+        margin-right: 32px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -375,7 +376,7 @@
     color: var(--title-text-color);
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 5px;
+        margin-bottom: 19px;
         font-size: 36px;  
     }
     

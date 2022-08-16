@@ -73,8 +73,9 @@
         <div class="backdrop-about backdrop-about__is-hidden" data-about-modal>
             <div class="modal-about-basic">
                 <picture>
-                    <source srcset="./images/desktop/about-modal-milk@1x.png , ./images/desktop/about-modal-milk@2x.png">
-                    <img class="card" src="./images/desktop/about-modal-milk@1x.png" alt="Milk">
+                    <source srcset="./images/desktop/about-modal-milk@1x.webp 1x, ./images/desktop/about-modal-milk@2x.webp 2x">
+                    <source srcset="./images/desktop/about-modal-milk@1x.png 1x, ./images/desktop/about-modal-milk@2x.png 2x">
+                    <img class="card" src="./images/desktop/about-modal-milk@1x.png" alt="Milk" loading="lazy">
                 </picture>
                 <div class="modal-container">
                     <p class="title about__title about__title-modal  ">how it’s made?</p>

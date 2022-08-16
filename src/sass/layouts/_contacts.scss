@@ -257,12 +257,14 @@
     border-radius: 22px;
 
     transition: color 250ms var(--time-function),
-      background-color 250ms var(--time-function);
+      background-color 250ms var(--time-function), transform 250ms var(--time-function), box-shadow 250ms var(--time-function);
 
     &:hover,
     &:focus {
       color: var(--title-text-color);
       background-color: var(--button-hover-color);
+      transform: scale(1.01);
+      box-shadow: 2px 2px 4px rgba(10, 10, 10, 0.2);
     }
 
     &--background-color--inverse {

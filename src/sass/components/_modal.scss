@@ -26,7 +26,12 @@
     max-height: 450px;
     padding: 45px 20px;
     border-radius: 10px;
-    background-image:  url(../images/desktop/modal.png);
+    .webp & {
+        background-image:  url(../images/desktop/modal.webp);
+    }
+    .no-webp & {
+        background-image: url(../images/desktop/modal.png);
+    }
     background-repeat: no-repeat;
     background-size: cover;
 

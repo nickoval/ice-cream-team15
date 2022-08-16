@@ -9,7 +9,7 @@
     background-color: var(--mobile-menu-bg-color);
     display: block;
 
-    transform: translateX(0);
+    transform: translateY(0);
     transition-property: transform;
     transition-duration: 1250ms;
     transition-timing-function: var(--time-function);
@@ -27,15 +27,15 @@
 
     &.is-hidden {
         
-        transform: translateX(-100%);
+        transform: translateY(-100%);
     }
 
-    @media screen and (min-width: 768px) {
-        &.is-hidden {
+    // @media screen and (min-width: 768px) {
+    //     &.is-hidden {
         
-            transform: translateX(-300%);
-        }
-    }
+    //         transform: translateY(-300%);
+    //     }
+    // }
  
     &__link {
     display: block;
